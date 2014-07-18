@@ -1,0 +1,4 @@
+random dots - then can dervive density of dots within circle of x radius at any point
+
+could then find contours?  maybe colour inside contours different colours
+then maybe some mechanism of density mapping to colour
