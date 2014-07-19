@@ -7,15 +7,22 @@
         <!-- https://github.com/davidbau/seedrandom //-->
         <script src="lib/seedrandom.min.js"></script>
         <script src="LensFlareStar.js"></script>
-         <script type="text/javascript" src="LukesLibrary/DivController.js"></script>
+         <script type="text/javascript" src="../LukesLibrary/DivController.js"></script>
+         <script type="text/javascript" src="../LukesLibrary/Vector.js"></script>
+         <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+         <script type="text/javascript" src="../LukesLibrary/Colour.js"></script>
 
     </head>
-    <body>
-        <div id="maindiv"></div>
+    <body  style="background-color: black;">
+        <div id="maindiv" style="width:500px;height:500px;"></div>
 
         <script>
-            var div = new DivController()
+            //using this little script means I can use Math.random() everywhere and it's actually seeded :D
+            Math.seedrandom('hello.');
+            var div = new DivController(document.getElementById("maindiv"),1);
             var star = new LensFlareStar();
+            
+            star.draw(div.ctxs[0],300,new Vector(250,250));
         </script>
 
     </body>
