@@ -2,3 +2,8 @@ random dots - then can dervive density of dots within circle of x radius at any 
 
 could then find contours?  maybe colour inside contours different colours
 then maybe some mechanism of density mapping to colour
+
+
+bright star with lens flare idea:
+random dots along the axis lines and centre of axis lines - do density of dots for brightness
+maybe layer up 3 for RGB?
